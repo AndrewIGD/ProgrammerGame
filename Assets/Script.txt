@@ -1,0 +1,126 @@
+Te spawnezi in afara unei cladiri. Trebuie sa intri in cladire daca te apropii de receptie,
+iti zice aia ceva la modul:
+"Buna dimineata! Colegii te asteapta la etajul 2. Spor!"
+
+Te urci in lift si trebuie sa apesi pe butonul cu 2 ca sa ajungi la etajul 2. Se deschide
+usa liftului si dai de cubicles de astea, in care fiecare angajat e in cate-o camera.
+Pe masura ce mergi prin cubicles, angajatii iti mai zic:
+"Neatza Daniel, am aici o problema, imi da o eroare aiurea. Uite iti las tie tastatura."
+
+Player-ul apasa taste random si dupa ce apasa vreo 10 taste:
+"Doamne sfinte, eroarea asta ma chinui de 2 zile sa o rezolv, mersi fain!"
+
+Si mai are vreo 2 astfel de encountere.
+
+La final, da de CEO sau ma rog:
+"Buna dimineata Daniel. Am primit astazi o cerere de o aplicatie interactiva VR."
+"Am inteles. In ce consta aplicatia?"
+"Clientul doreste o aplicatie in care utilizatorul sa fie pus intr-un balon cu aer
+cald si calatoreste prin amintirile sale."
+"Nu pare prea greu, termin imediat."
+"Foarte bine Daniel. Daca nu te deranjeaza, vreau sa mai vorbesc ceva cu tine in privat. Urmeaza-ma."
+
+Si merge intr-un cubicle de asta mai retras.
+
+"Daniel, se intampla un lucru foarte grav. Nu le-am zis celorlalti angajati deoarece s-ar panica
+si nu ar fi bine. Am suferit numeroase atacuri in ultima vreme. Am reusit in mare parte sa ne
+aparam de aceste atacuri, dar simt ca ne va lovi ceva puternic, nu stiu ce dar va fi grav."
+"Nu cred ca e cazul, avem un firewall foarte puternic, e imposibil sa fie patruns, nu are cum"
+"Daniel, iti zic, ceva vine dupa noi si nu e frumos absolut deloc, trebuie sa ne intarim apararile"
+"Dar nu are cum, n-am ce sa-i fac mai mult firewall-ului, e perfect"
+"(heavy breathing)"
+
+Meanwhile, un angajat random:
+"Boss, calculatorul mi-o crapat."
+"Cum adica?"
+"Nu mai pot sa-mi accesez fisierele sub nicio forma"
+"Ai tras ransomware?! Cat de incompetent poti sa fii?"
+
+Alti angajati:
+"Boss, si mie nu-mi merg fisierele"
+"La fel si mie"
+"La fel"
+
+Seful:
+"Ce naiba ati facut de nu va mai merge nimic. Daniel, vezi ce poti face"
+"Nu pot sa fac nimic, daca intru pe orice fisier imi da eroare. Nu merge absolut nimic, e
+ca si cum calcultoare asta au fost"
+"Hackuite"
+
+Pe toate monitoarele apare o fata de robot.
+
+"Nu te-ai gandit ca o sa vina vreodata ziua asta, Elliot."
+"Nu pot sa cred!"
+"Ti-a venit sfarsitul, Elliot. Compania iti va intra in faliment, si vei ajunge pe strazi murind de foame."
+"Cine esti si de ce faci asta?"
+"Cum Elliot? Nu ma stii? Sunt cel cu care am fondat compania asta pe care o tot detii tu. Ai cumparat
+mai multe actiuni ca mine si dupa m-ai dat afara pentru ca nu ma vedeai esential."
+"Alin..."
+"Asa ca de acum nici eu nu te mai vad esential in societatea asta, esti o pesta. Iar cu pesta stii
+ce trebuie sa se intample. Pesta, trebuie sa fie exterminata."
+
+*Unul din calculator explodeaza*
+
+"WOAH"
+
+*Mai explodeaza vreo 3-4 calculatoare*
+
+"La revedere, Elliot."
+
+*Monitoarele se sting*
+
+"Este momentul sa folosesc acel device."
+"Daniel, nu! E doar un prototip, daca ti se intampla ceva?"
+"Nu mai este alta varianta, vrei sa traiesti sau nu?"
+"... Atunci presupun ca nu mai este alta varianta. Haide."
+
+*Ajung la un device, in forma de capsula*
+
+"Intra"
+
+*Pune capac capsulei*
+
+"Daniel, iti urez success."
+
+*Lumea se transforma in biti si duce face intr-o lume alba.*
+
+*Nivel de parkour cu un tutorial*
+
+*Inca vreo cateva levele*
+
+*Penultimul nivel, intri pe o usa*
+
+*Ulimul nivel, incerci sa te strecori si sa faci niste task-uri in timp ce bot-ul nu se uita la tine.*
+*Daca te vede, trage cu laser in tine si mori*
+
+Dupa task-uri, Elliot:
+"Ha, am auzit ceva. Daniel nu pot sa te cred! Hai dispari!"
+
+*Trage cu laser in tine cu delay de 2 secunde. Trebuie sa te urci pe scara si sa sari pe capul lui*
+
+Dupa ce te urci pe scara:
+"Lasere!"
+
+*Camera se face rosie din laterale si vine inauntru*
+
+*Dupa ce sari pe el, trebuie sa dai in el cu un cutit*
+
+"CE? CE?! OPRESTE-TE! OPRESTE-TE!!!"
+
+*Dupa 3 hit-uri, zbiara puternic si esti teleportat in lumea reala in capsula*
+
+*Credits*
+
+"Daniel, Daniel, esti ok? Hai ridica-te."
+
+*Aplauze si chestii*
+
+"Ai reusit Daniel. Hai repede la spital, nu arati bine deloc!"
+
+*Aplauze si aplauze*
+
+*Pe masura ce te apropii de usa, ecranul de fade in negru si apare iar moaca aia de robot*
+
+"Nu s-a terminat inca Daniel, nu s-a terminat!"
+
+*Tiuit si dupa se inchide jocul*
