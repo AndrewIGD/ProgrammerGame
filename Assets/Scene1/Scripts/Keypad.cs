@@ -33,7 +33,7 @@ public class Keypad : MonoBehaviour
                 animator.Play("press");
                 press.Play();
                 Invoke("CloseLift", 1f);
-                Invoke("NextScene", 10f);
+                Invoke("NextScene", 12f);
             }
             else if (other.tag.Contains("Right") //&&
 
@@ -49,7 +49,7 @@ public class Keypad : MonoBehaviour
                 animator.Play("press");
                 press.Play();
                 Invoke("CloseLift", 1f);
-                Invoke("NextScene", 10f);
+                Invoke("NextScene", 12f);
             }
         }
     }
