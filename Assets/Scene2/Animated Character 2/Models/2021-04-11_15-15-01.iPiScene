@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<Scene>
+  <SourceVideo>file:///C:/Users/AndrewIGD/Documents/2021-04-11_15-15-01.iPiVideo</SourceVideo>
+  <!--Positions are in meters-->
+  <!--Angles are in degrees-->
+  <Camera DiagonalFieldOfView="69.999410" PixelAspectRatio="1.000000" resolutionX="640" resolutionY="480">
+    <Translation value="-0.000994 0.782630 2.773227" />
+    <Rotation axis="1.000000 0.000000 0.000000" angle="1.651046" />
+    <Rotation axis="0.000000 1.000000 0.000000" angle="0.005130" />
+    <Rotation axis="0.000000 0.000000 1.000000" angle="0.091027" />
+  </Camera>
+</Scene>

@@ -10,6 +10,16 @@ Pe masura ce mergi prin cubicles, angajatii iti mai zic:
 Player-ul apasa taste random si dupa ce apasa vreo 10 taste:
 "Doamne sfinte, eroarea asta ma chinui de 2 zile sa o rezolv, mersi fain!"
 
+NPC1 - Wavenet-H, speed - 1, pitch - 2.80
+NPC2 - J, 1.3, 1.2
+NPC3 - G, 1.3, -5.2
+
+CEO - J, 1.15, -6.8
+
+Player - B, 1.15, -3.6
+
+Computer - D, 0.93, 0.4
+
 Si mai are vreo 2 astfel de encountere.
 
 La final, da de CEO sau ma rog:

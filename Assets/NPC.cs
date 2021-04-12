@@ -6,15 +6,50 @@ public class NPC : MonoBehaviour
 {
     [SerializeField] GameObject target;
     [SerializeField] AudioSource successSound;
+    [SerializeField] GameObject root;
+
+    [SerializeField] GameObject firstObj;
+    [SerializeField] GameObject secondObj;
+
+    public void WatchFirst()
+    {
+        NotWatch(firstObj);
+    }
+
+    public void WatchSecond()
+    {
+        NotWatch(secondObj);
+    }
+
     public void BeginEncounter()
     {
         GetComponent<Animator>().Play("encounter");
         GetComponent<AudioSource>().Play();
     }
 
+    public void SetRoot(float angle)
+    {
+        watchTarget = false;
+        root.transform.eulerAngles = new Vector3(-90f, angle, 0);
+    }
+
     public void WatchTarget()
     {
         watchTarget = true;
+    }
+
+    GameObject lookAt;
+
+    public void NotWatch(GameObject obj)
+    {
+        watchTarget = false;
+        lookAt = obj;
+    }
+
+    public void NotWatchNull()
+    {
+        watchTarget = false;
+        lookAt = null;
     }
 
     public void SuccessSound()
@@ -26,10 +61,21 @@ public class NPC : MonoBehaviour
     bool watchTarget = false;
     private void Update()
     {
-        if(true)
+        if(watchTarget)
         {
-            transform.LookAt(target.transform);
-            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, transform.eulerAngles.z);
+            var targetRotation = Quaternion.LookRotation(target.transform.position - root.transform.position);
+
+            targetRotation = Quaternion.Euler(-89.98f, targetRotation.eulerAngles.y - 45, targetRotation.eulerAngles.z);
+
+                root.transform.rotation = Quaternion.Slerp(root.transform.rotation, targetRotation, 5 * Time.deltaTime);
+        }
+        else if(lookAt != null)
+        {
+            var targetRotation = Quaternion.LookRotation(lookAt.transform.position - root.transform.position);
+
+            targetRotation = Quaternion.Euler(-89.98f, targetRotation.eulerAngles.y - 45, targetRotation.eulerAngles.z);
+
+            root.transform.rotation = Quaternion.Slerp(root.transform.rotation, targetRotation, 5 * Time.deltaTime);
         }
     }
 }
