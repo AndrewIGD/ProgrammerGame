@@ -8,6 +8,8 @@ TagManager:
   - HandLeft
   - HandRight
   - Ground
+  - Speed
+  - Jump
   layers:
   - Default
   - TransparentFX

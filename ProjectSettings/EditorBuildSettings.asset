@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scene3/Scene5.unity
+    guid: c5b416d3aa879ce43951d8a82d6f56e9
+  - enabled: 1
+    path: Assets/Scene3/Scene4.unity
+    guid: 1c6553287097a8949a885904b3bd9fc1
+  - enabled: 1
     path: Assets/Scene3/Scene3.unity
     guid: b5a562824d7bfad419931a056c26a93a
   - enabled: 1
@@ -17,9 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/DeathScene/DeathScene.unity
     guid: c1a77764aeda5e545a1a0e50f961183b
-  - enabled: 1
-    path: Assets/Scene3/Scene4.unity
-    guid: 1c6553287097a8949a885904b3bd9fc1
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}

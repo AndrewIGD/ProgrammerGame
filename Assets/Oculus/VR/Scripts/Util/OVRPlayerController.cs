@@ -198,6 +198,8 @@ public class OVRPlayerController : MonoBehaviour
 
 	void Update()
 	{
+
+
 		if (OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0.5)
 			Jump();
 
@@ -377,9 +379,24 @@ public class OVRPlayerController : MonoBehaviour
 
 			moveInfluence = Acceleration * 0.1f * MoveScale * MoveScaleMultiplier;
 
-#if !UNITY_ANDROID // LeftTrigger not avail on Android game pad
-			moveInfluence *= 1.0f + OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) * 2;
-#endif
+			RaycastHit[] hit;
+
+			float move = 1.0f;
+
+			hit = Physics.RaycastAll(transform.position + new Vector3(0,10,0), -transform.up, 1000);
+
+			foreach(RaycastHit obj in hit)
+			{
+				if (obj.collider.gameObject.CompareTag("Speed"))
+				{
+					move += 7;
+					break;
+				}
+			}
+
+			#if !UNITY_ANDROID // LeftTrigger not avail on Android game pad
+						moveInfluence *= move + OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) * 2;
+			#endif
 
 			Vector2 primaryAxis = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
 
@@ -512,7 +529,22 @@ public class OVRPlayerController : MonoBehaviour
 		if (!Controller.isGrounded)
 			return false;
 
-		MoveThrottle += new Vector3(0, transform.lossyScale.y * JumpForce, 0);
+		RaycastHit[] hit;
+
+		float jump = 1.0f;
+
+		hit = Physics.RaycastAll(transform.position + new Vector3(0, 10, 0), -transform.up, 1000);
+
+		foreach (RaycastHit obj in hit)
+		{
+			if (obj.collider.gameObject.CompareTag("Jump"))
+			{
+				jump += 29;
+				break;
+			}
+		}
+
+		MoveThrottle += new Vector3(0, transform.lossyScale.y * JumpForce * jump, 0);
 
 		return true;
 	}
