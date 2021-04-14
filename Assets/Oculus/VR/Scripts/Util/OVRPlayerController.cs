@@ -198,6 +198,9 @@ public class OVRPlayerController : MonoBehaviour
 
 	void Update()
 	{
+		if (OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0.5)
+			Jump();
+
 		if (!playerControllerEnabled)
 		{
 			if (OVRManager.OVRManagerinitialized)
@@ -206,14 +209,7 @@ public class OVRPlayerController : MonoBehaviour
 
 				if (CameraRig != null)
 				{
-					if (OVRInput.Get(OVRInput.Axis1D.SecondaryHandTrigger) > 0.5)
-						Acceleration = 0.3f;
-					else Acceleration = 0.1f;
-
 					CameraRig.UpdatedAnchors += UpdateTransform;
-
-					if (OVRInput.GetDown(OVRInput.Button.Three))
-						Jump();
 				}
 				playerControllerEnabled = true;
 			}
@@ -351,8 +347,8 @@ public class OVRPlayerController : MonoBehaviour
 				MoveScale = 0.70710678f;
 
 			// No positional movement if we are in the air
-			if (!Controller.isGrounded)
-				MoveScale = 0.0f;
+			//if (!Controller.isGrounded)
+			//	MoveScale = 0.0f;
 
 			MoveScale *= SimulationRate * Time.deltaTime;
 
@@ -382,7 +378,7 @@ public class OVRPlayerController : MonoBehaviour
 			moveInfluence = Acceleration * 0.1f * MoveScale * MoveScaleMultiplier;
 
 #if !UNITY_ANDROID // LeftTrigger not avail on Android game pad
-			moveInfluence *= 1.0f + OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger);
+			moveInfluence *= 1.0f + OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) * 2;
 #endif
 
 			Vector2 primaryAxis = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
