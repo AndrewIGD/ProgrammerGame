@@ -12,18 +12,18 @@ public class LiftOffset : MonoBehaviour
 
     public void GetOffset()
     {
-        offset = GameObject.Find("OVRPlayerController").transform.position - transform.position;
+        //offset = GameObject.Find("OVRPlayerController").transform.position - transform.position;
     }
 
     Vector3 offset;
 
     private void OnLevelWasLoaded(int level)
     {
-        if (SceneManager.GetActiveScene().name == "Scene2")
+        /*if (SceneManager.GetActiveScene().name == "Scene2")
         {
             GameObject.Find("OVRPlayerController").transform.position = GameObject.Find("lift").transform.position + offset;
         }
         else if (SceneManager.GetActiveScene().name != "Scene1")
-            Destroy(gameObject);
+            Destroy(gameObject);*/
     }
 }

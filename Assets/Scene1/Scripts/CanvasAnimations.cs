@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CanvasAnimations : MonoBehaviour
 {
-    void DeathScene()
+    public void DeathScene()
     {
         SceneManager.LoadScene("DeathScene");
     }

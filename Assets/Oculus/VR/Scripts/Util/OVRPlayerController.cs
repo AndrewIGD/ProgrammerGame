@@ -206,7 +206,14 @@ public class OVRPlayerController : MonoBehaviour
 
 				if (CameraRig != null)
 				{
+					if (OVRInput.Get(OVRInput.Axis1D.SecondaryHandTrigger) > 0.5)
+						Acceleration = 0.3f;
+					else Acceleration = 0.1f;
+
 					CameraRig.UpdatedAnchors += UpdateTransform;
+
+					if (OVRInput.GetDown(OVRInput.Button.Three))
+						Jump();
 				}
 				playerControllerEnabled = true;
 			}
