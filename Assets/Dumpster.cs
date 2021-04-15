@@ -12,7 +12,7 @@ public class Dumpster : MonoBehaviour
         {
             Destroy(other.gameObject);
             portal.SetActive(true);
-            AudioSource.PlayClipAtPoint(impact, transform.position);
+            AudioSource.PlayClipAtPoint(impact, transform.position, 0.4f);
         }
     }
 }
