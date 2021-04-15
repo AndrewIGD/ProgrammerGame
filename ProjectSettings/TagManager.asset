@@ -10,6 +10,8 @@ TagManager:
   - Ground
   - Speed
   - Jump
+  - Sphere
+  - Cube
   layers:
   - Default
   - TransparentFX

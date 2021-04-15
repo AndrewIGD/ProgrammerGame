@@ -137,6 +137,8 @@ public class OVRGrabber : MonoBehaviour
         {
 		    OnUpdatedAnchors();
         }
+        if (grabbedObject != null)
+            grabbedObject.transform.position = transform.position;
 	}
 
     // Hands follow the touch anchors by calling MovePosition each frame to reach the anchor.
